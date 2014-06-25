@@ -1,0 +1,23 @@
+{
+  "name": "lvendrame",
+  "version": "0.0.2",
+  "description": "ERROR: No README.md file found!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://lvendrame@bitbucket.org/lvendrame/lvendrameweb.git"
+  },
+  "keywords": [
+    "lvendrame",
+    "website",
+    "homepage"
+  ],
+  "author": "Luis Fernando Vendrame <lvendrame@gmail.com>",
+  "license": "BSD",
+  "dependencies": {
+    "express": "~4.4.4"
+  }
+}
