@@ -1,16 +1,261 @@
 {% extends '../layout.html' %}
 
-{% block title %}Luís Fernando Vendrame{% endblock %}
-
 {% block head %}
-  {% parent %}
-  <link rel="stylesheet" href="custom.css">
 {% endblock %}
 
 {% block content %}
-    <div class="content">
-        <h1>Luís Fernando Vendrame</h1>
+    <div class="div-sec div-inicial">
+        <div id="hmCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#hmCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#hmCarousel" data-slide-to="1"></li>
+                <li data-target="#hmCarousel" data-slide-to="2"></li>
+                <li data-target="#hmCarousel" data-slide-to="3"></li>
+                <li data-target="#hmCarousel" data-slide-to="4"></li>
+                <li data-target="#hmCarousel" data-slide-to="5"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item meuSlide">
+                    <h1>Luís Fernando Vendrame</h1>
+                    <p>
+                        Prestação de serviços em desenvolvimento de aplicações Windows, Web e Mobile.
+                    </p>
+                </div>
+                <div class="item meuSlide">
+                    <h1>Desenvolvimento de Sites.</h1>
+                    <p>
+                        Veja sua página adaptável e funcionando em qualquer dispositivo, com design dinâmico e atualizado.
+                    </p>
+                </div>
+                <div class="item meuSlide">
+                    <h1>Consultoria em mídias sociais.</h1>
+                    <p>
+                        Inserção de empresas em mídias sociais como Facebook, Twitter, Google+, etc.
+                    </p>
+                </div>
+                <div class="item meuSlide">
+                    <h1>Otimização de Sites.</h1>
+                    <p>
+                        Melhoria de posicionamento em ferramentas de buscas (Google, Bing, Yahoo, etc.).<br />
+                        Diminuição do tempo de carregamento do site.
+                    </p>
+                </div>
+                <div class="item meuSlide">
+                    <h1>Criação e manutenção de softwares.</h1>
+                    <p>
+                        Com ampla experiência em desenvolvimento, crio softwares utilizando os melhores<br />
+                        padrões e práticas, cumprindo prazos com qualidade e entregas contínuas.
+                    </p>
+                </div>
+                <div class="item meuSlide">
+                    <h1>Consultoria em arquitetura de softwares.</h1>
+                    <p>
+                        Análise de ambiente e uso, propondo soluções que se adaptem bem as necessidades<br />
+                        agilizando as comunicações e simplificando o desenvolvimento.
+                    </p>
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#hmCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#hmCarousel" data-slide="next">&rsaquo;</a>
+        </div>
     </div>
-    <p>Esta é uma página de testes.</p>
-    <p>Vamos ver até onde vai</p>
+    <hr class="bkg-blue-05" />
+    <div id="sobre" class="div-sec bkg-blue-05">
+        <h1>Sobre</h1>
+        <img class="foto" src="images/luis.png" />
+        <p class="descricaoFoto">
+            Formado em Ciências da Computação pela <a href="http://www.fei.edu.br" target="_blank">FEI</a>, atua no Desenvolvimento de softwares desde 2005.<br />
+            Com inúmeros projetos nos mais diversificados segmentos, adquiriu sólida experiência no desenvolvimento, engenharia e arquitetura de software.<br />
+            Hoje é responsável pela liderança técnica na empresa <a href="http://www.digisystem.com.br" target="_blank">Digisystem</a>, o qual tem orgulho de ser parte
+            do crescimento, principalmente da área de desenvolvimento de software, ajudando a implantar técnicas e processos que auxiliaram a ter maior
+            agilidade e qualidade na entrega de produtos.<br />
+            <br />
+            No aprimoramento constante das técnicas envolvidas no desenvolvimento de software.
+        </p>
+        <div class="limpador"></div>
+        <a href="#">Ir para o topo</a>
+    </div>
+    <hr class="bkg-blue-04" />
+    <div id="servicos" class="div-sec bkg-blue-04">
+        <h1>Serviços</h1>
+        <h3>Desenvolvimento de Sites.</h3>
+        <p>
+            Dezenas de sites e sistemas desenvolvidos para grandes clientes como Ibope, Xerox, Sesi, Senai e Senac.<br />
+            Com diversos cursos, estudos e conferências, são utilizadas as melhores e mais atuais práticas de criação.<br />
+            Sites e sistemas web perfeitamente adaptáveis e funcionando em qualquer dispositivo, com design dinâmico e atualizado.<br />
+            Análise e estatísticas dos sites através das ferramentas do Google, melhorando o posicionamento do site nos serviços de busca e identificando o público real e o desejado.
+            Integração com redes sociais como Facebook, Twitter, Google+, etc.<br />
+            Utilização de recursos para auxílio ao usuário, como mapas, trajetos, recursos de chamadas a contatos direto no site.<br />
+            Sites com baixo tempo de carregamento, facilitando o acesso mesmo em redes com bandas ruins.
+        </p>
+        <h3>Consultoria em mídias sociais.</h3>
+        <p>
+            Criação de páginas no Facebook e no Google+ e perfil no Twitter.<br />
+            Conheça e interaja com seu público, entenda suas espectativas, faça propagandas direcionadas, receba elogios sugestões e reclamações.
+            Receba nossa consultoria de como fazer tudo isto possível.
+        </p>
+        <h3>Criação e manutenção de softwares.</h3>
+        <p>
+            A grande bagagem técnica proporciona a criação de softwares com alta qualidade e desempenho.<br />
+            Sempre procurando as melhores soluções para os problemas apresentados e com entregas sempre priorizando o valor do negócio, garantindo e satisfação total dos clientes e usuários.<br />
+            Com atuação em diversas áreas, como e-commerce, sistemas financeiros, ERPs, CRMs, sistemas educionais, sistemas de gestão, jogos, etc., você tem a garantia de soluções planejadas e difersificadas.
+        </p>
+        <h3>Consultoria em arquitetura de softwares.</h3>
+        <p>
+            Para cada tamanho de empresa, para cada área de atuação, para cada necessidade, existe um ambiente diferente que deverá ser muito bem planejado.<br />
+            Auxilio neste planejamento, escolhendo todas as ferramentas, máquinas e ambientes tanto para o desenvolvimento como para a implatação do software.<br />
+            Este planejamento equilibrará custos, desempenho, escalabilidade e sustentabilidade do software.<br />
+            Garanta alto desempenho de seus sistemas, com o mínimo custo e a máxima qualidade.
+        </p>
+        <a href="#">Ir para o topo</a>
+    </div>
+    <hr class="bkg-blue-06" />
+    <div id="curriculo" class="div-sec bkg-blue-06">
+        <h1>Currículo</h1>
+        <div class="formacao">
+            <h2 onclick="$(&#39;#ulFormacao&#39;).toggle(&#39;slow&#39;);">&lt;Formação&gt;</h2>
+            <ul id="ulFormacao">
+                <li><span>Pós-Graduação <i>Lato sensu</i></span><br>
+                    <a target="_blank" href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.CourseDataServer,selectCourse2&course=2194&template=886.dwt&testeira=724&loc=1">Games: Produção e Programação </a>, <a target="_blank" href="http://www.sp.senac.br/">Senac-SP</a> (julho/2011) </li>
+                <li><span>Superior</span><br />
+                    <a target="_blank" href="http://www.fei.edu.br/cienciacomp/disciplinas.htm">Ciências
+                                da Computação</a>, <a target="_blank" href="http://www.fei.edu.br/">FEI</a>
+                    (dezembro/2008) </li>
+                <li><span>Cursos Complementares</span>
+                    <ul>
+                        <li>Product Owner (Criando e Gerenciando Produtos) - Abuzitos</li>
+                        <li>Implantação e Desenvolvimento em Sharepoint - bfbiz</li>
+                        <li>Análise de Ponto de Função - ???</li>
+                        <li>Java (Algoritmos e Programação Distribuída), IME-USP (janeiro/2005)</li>
+                        <li>Microsoft SQL Server (Introdução, programação e administração), Impacta Tecnologia
+                                    (janeiro/2004)</li>
+                        <li>AutoCad, Treinasoft (dezembro/2003)</li>
+                        <li>Logística, KMCA Treinamentos (dezembro/2002)</li>
+                        <li>WebDesigner, DataByte (julho/2002)</li>
+                        <li>C.A.M.P. – Instituição de Ensino e Formação Social (julho/1998)</li>
+                    </ul>
+                </li>
+                <li><span>Idiomas</span>
+                    <ul>
+                        <li>Inglês intermediário, PBF e Particular (desde 2006)</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 onclick="$(&#39;#ulFormacao&#39;).toggle(&#39;slow&#39;);">&lt;/Formação&gt;</h2>
+        </div>
+        <div class="historico">
+            <h2 onclick="$(&#39;#ulHist&#39;).toggle(&#39;slow&#39;);">&lt;Histórico profissional&gt;</h2>
+            <ul id="ulHist">
+                <li><span><a target="_blank" href="http://www.digisystem.com.br/">Digisystem</a> (Perfil
+                            Informática Com. e Manut. Ltda.)</span> - desde <i>outubro/2007</i><br>
+                    <span>Líder Técnico</span><br>
+                    <p>
+                        Desenvolvimento de aplicações Windows e Web em .NET e C#.<br>
+                        Análise e implementação de arquiteturas dos softwares.<br>
+                        Criação de frameworks.
+                    </p>
+                </li>
+                <li><span><a target="_blank" href="http://www.xerox.com/index/ptbr.html">Xerox do Brasil
+                            S/A</a></span> - de <i>julho/2007</i> a <i>outubro/2007</i><br>
+                    <span>Programador</span><br>
+                    <p>
+                        Desenvolvimento e manutenção de softwares utilizando C# e ASP.NET
+                    </p>
+                </li>
+                <li><span><a target="_blank" href="http://www.zinia.com.br/">Inovazinia Tecnologia da
+                            Informação Ltda.</a></span> - de <i>outubro/2006</i> a <i>julho/2007</i><br>
+                    <span>Programador</span><br>
+                    <p>
+                        Desenvolvimento de aplicações Web para área bancária com C#, VB.NET e ASP.NET.
+                    </p>
+                </li>
+                <li><span><a target="_blank" href="http://www.mkth.com.br/">Markethink MKTH Tecnologia
+                            Ltda.</a></span> - de <i>abril/2005</i> a <i>outubro/2006</i><br>
+                    <span>Analista Programador</span><br>
+                    <p>
+                        Análise de requisitos, modelagem, planejamento e definição de arquitetura de sistemas
+                                e banco de dados. Desenvolvimento de aplicações Windows com C#, aplicações Web com
+                                ASP.NET e C#.<br>
+                        Utilização de conceitos de WebServices, O/RM, AJAX, Paterns &amp; Pratices, Enterprise
+                                Library.<br>
+                        Criação de sistemas para análise de fraudes.
+                    </p>
+                </li>
+                <li><span><a target="_blank" href="http://www.flextronics.com.br/">Flextronics Network
+                            Services S/A</a></span> - de <i>janeiro/2005</i> a <i>abril/2005</i><br>
+                    <span>Técnico de Informática</span><br>
+                    <p>
+                        Suporte a usuários, manutenção e configuração de computadores e servidores.<br>
+                        Gerenciamento de servidores de e-mail.
+                    </p>
+                </li>
+                <li><span><a target="_blank" href="http://www.silvatrim.com.br/">Plásticos Silvatrim
+                            do Brasil Ltda.</a></span> - de <i>maio/2000</i> a <i>janeiro/2005</i><br>
+                    <span>Assistente de Desenvolvimento de Produtos</span> - de <i>junho/2004</i> a
+                            <i>janeiro/2005</i><br>
+                    <p>
+                        Criação de AAPQP, orçamento de novos produtos, controle do desenvolvimento de novos
+                                produtos, suporte a engenharia e ao composto de materiais.
+                    </p>
+                    <span>Assistente de PCP</span> - de <i>julho/2001</i> a <i>junho/2004</i><br>
+                    <p>
+                        Controle de estoques, carga máquina, apontamento de produção e programação de produção.
+                    </p>
+                    <span>Auxiliar de Departamento Pessoal</span> - de <i>maio/2000</i> a <i>julho/2001</i><br>
+                    <p>
+                        Apontamento de horas, fechamento de folha de pagamento e rotinas de DP e RH em geral.
+                    </p>
+                </li>
+                <li><span><a target="_blank" href="http://www.rolls-royce.com/civil/index.jsp">Motores
+                            Rolls-Royce do Brasil S/A</a></span> - de <i>agosto/1998</i> a <i>julho/1999</i><br>
+                    <span>Auxiliar de Almoxarife</span><br>
+                    <p>
+                        Serviços gerais de estoque e almoxarifado.
+                    </p>
+                </li>
+            </ul>
+            <h2 onclick="$(&#39;#ulHist&#39;).toggle(&#39;slow&#39;);">&lt;/Histórico profissional&gt;</h2>
+        </div>
+        <a href="#">Ir para o topo</a>
+    </div>
+    <hr class="bkg-blue-04" />
+    <div id="contato" class="div-sec bkg-blue-04">
+        <h1>Contato</h1>
+        <br />
+        <ul>
+            <li>Telefone:<br />
+                <a href="tel:+551143900887">(11) 4390-0887</a> </li>
+            <li>Celular:<br />
+                <a href="tel:+5511986120039">(11) 98612-0039</a> </li>
+            <li>E-mail:<br />
+                <a href="mailto:lvendrame@gmail.com">lvendrame@gmail.com</a> </li>
+            <li>Correio:
+                    <address>
+                        Rua João Almendra, 130 - Bairro Cerâmica - CEP: 09581-320 - São Caetano do Sul -
+                        São Paulo
+                </address>
+            </li>
+        </ul>
+        <div id="map_canvas" style="width: 100%; height: 300px">
+        </div>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAWvP6XsFw_0yz09BCi_U84OSU3cWRDXL4&sensor=true"
+            type="text/javascript"></script>
+        <script type="text/javascript">
+            var myLatlng = new google.maps.LatLng(-23.63185230694844, -46.57950990000006)
+            var mapOptions = {
+                center: myLatlng,
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Luís Fernando Vendrame'
+            });
+        </script>
+        <a href="#">Ir para o topo</a>
+    </div>
 {% endblock %}

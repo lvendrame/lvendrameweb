@@ -9,6 +9,8 @@ app.set('views', __dirname + '/views');
 app.set('view cache', false);
 swig.setDefaults({ cache: false });
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', function(req, res){
     res.render('home/index', {});
 });
